@@ -76,3 +76,4 @@ c-style strings are arrays of chars
 `char *text = "hello";` 
 
 advice use std::string
+
