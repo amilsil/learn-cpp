@@ -99,7 +99,8 @@ function<int(int)> fac = [&fac](int x) {
 ```
 
 # Enum
-```enum OldColor 
+```
+enum OldColor 
 {
     Red, Green, Blue
 }
