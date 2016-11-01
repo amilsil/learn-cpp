@@ -235,3 +235,31 @@ const string& name3 = getName(); // works, cannot change it though
 string&& name4 = getName(); // works, by r-value reference.
 name4 = "Jack"; // works
 ```
+
+# L-Values
+Can be accessed from more than one point in source code.
+* Named objects + objects accessible via pointers/references
+* You can take address of them
+
+# R-Values
+Everything not an L-Values
+* Refer to objects accessible at exactl one point in source code 
+* Temporary Objects: return value of a function
+* Unnamed 
+
+```cpp
+int x;
+x = 10; 
+```
+* x is an L-Values
+* could be referred to from more than one point
+* 10 is an R-value (all literals)
+
+```cpp
+int add(int x, int y)
+{
+    return x + y;
+}
+```
+* x, y are L-values
+* return value is an R-value
